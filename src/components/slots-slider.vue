@@ -1,17 +1,14 @@
 <template>
   <div class="slot-slider">
-    <div class="slot-slider__text max-container">
-      <h2 class="slot-slider__text-heading heading__content">Slots</h2>
-      <a class="slot-slider__text-anchor">See all</a>
-    </div>
     <Carousel class="slot-slider__slider max-container" :settings="settings" :breakpoints="breakpoints" :touchDrag="true">
       <Slide v-for="(slide, index) in slides" :key="index">
         <div class="slot-slider__item">
+          <img :src="slide.bgImage" alt="img">
           <img :src="slide.image" :alt="slide.alt">
           <h4 class="slot-slider__item--heading">{{ slide.title }}</h4>
-          <p class="slot-slider__item--caption">{{ slide.subtitle }}</p>
         </div>
-        <div class="carousel__item slot-slider__card">
+        <div class="">
+          
         </div>
       </Slide>
       <template #addons>
@@ -63,41 +60,22 @@ export default defineComponent({
 
     slides: [
       {
-        title      :  'Game name',
-        subtitle   :  'Provider',
-        image      :  require('@/assets/images/imgs-pequ/baseball.jpg'),
-        alt        :  'Lorem ipsum',
+        title      :  'SPORTS',
+        image      :  require('@/assets/images/home/player 02.png'),
+        bgImage    :  require('@/assets/images/home/sports-Bckgr.jpg'),
+        alt        :  'sports',
       },
       {
-        title      :  'Game name',
-        subtitle   :  'Provider',
-        image      :  require('@/assets/images/imgs-pequ/baseball.jpg'),
-        alt        :  'Lorem ipsum',
+        title      :  'CASINO',
+        image      :  require('@/assets/images/home/casino elemnts 02.png'),
+        bgImage    :  require('@/assets/images/home/casino-Bckgr.jpg'),
+        alt        :  'casino',
       },
       {
-        title      :  'Game name',
-        subtitle   :  'Provider',
-        image      :  require('@/assets/images/imgs-pequ/baseball.jpg'),
-        alt        :  'Lorem ipsum',
-      },
-      {
-        title      :  'Game name',
-        subtitle   :  'Provider',
-        image      :  require('@/assets/images/imgs-pequ/baseball.jpg'),
-        alt        :  'Lorem ipsum',
-      }
-      ,
-      {
-        title      :  'Game name',
-        subtitle   :  'Provider',
-        image      :  require('@/assets/images/imgs-pequ/baseball.jpg'),
-        alt        :  'Lorem ipsum',
-      },
-      {
-        title      :  'Game name',
-        subtitle   :  'Provider',
-        image      :  require('@/assets/images/imgs-pequ/baseball.jpg'),
-        alt        :  'Lorem ipsum',
+        title      :  'RACEBOOK',
+        image      :  require('@/assets/images/home/horse 02.png'),
+        bgImage    :  require('@/assets/images/home/horses-Bckgr.jpg'),
+        alt        :  'racebook',
       }
     ]
   }),

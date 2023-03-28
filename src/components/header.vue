@@ -3,7 +3,7 @@
     <div class="header-content max-container">
       <div class="header-content__nav">
         <menu-component/>
-        <a href="/">Logo Here<img class="header-content__img" src="./" alt="logo" /></a>
+        <a href="/"><img class="header-content__img" src="../assets/images/home/logo.svg" alt="logo"></a>
       </div>
       <div class="header-content__cta">
         <div class="header-buttons">
@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <ModalComponent ref="modal" />
+    <ModalComponent ref="modal"/>
   </header>
 </template>
 

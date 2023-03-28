@@ -19,18 +19,18 @@
     setup:() => {
       let wager = [
         {
-          image      :  require('@/assets/images/live-wager/LW_01.png'),
-          bgImage    :  require('@/assets/images/live-wager/bg_lw-1.jpg'),
+          image      :  require('@/assets/images/home/slider_sports-imgs.jpg'),
+          bgImage    :  require('@/assets/images/home/slider_sports-imgs.jpg'),
           alt        :  'Lorem ipsum'
         },
         {
-          image      :  require('@/assets/images/live-wager/LW_02.png'),
-          bgImage    :  require('@/assets/images/live-wager/bg_lw-2.jpg'),
+          image      :  require('@/assets/images/home/slider_sports-imgs.jpg'),
+          bgImage    :  require('@/assets/images/home/slider_sports-imgs.jpg'),
           alt        :  'Lorem ipsum'
         },
         {     
-          image      :  require('@/assets/images/live-wager/LW_03.png'),
-          bgImage    :  require('@/assets/images/live-wager/bg_lw-2.jpg'),
+          image      :  require('@/assets/images/home/slider_sports-imgs.jpg'),
+          bgImage    :  require('@/assets/images/home/slider_sports-imgs.jpg'),
           alt        :  'Lorem ipsum'
         }
       ]

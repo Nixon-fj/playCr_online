@@ -1,10 +1,7 @@
 <template>
-  <Carousel :autoplay="2000" :transition="1000" :wrapAround="true" :touchDrag="false">
+  <Carousel :autoplay="5000" :transition="1000" :wrapAround="true" :touchDrag="false">
     <Slide v-for="(slide, index) in slides" :key="index">
       <div class="carousel__item hero-slider">
-        <div class="hero-slider__info--img">
-          <img class="hero-slider__img" :src="slide.image" :alt="slide.alt">
-        </div>
         <div class="hero-slider__info">
           <div class="hero-slider__info--container">
             <div class="hero-slider__text">
@@ -12,7 +9,7 @@
               <h1 class="hero-slider__text-title">{{ slide.title }}</h1>
             </div>
             <div class="hero-slider__slider-img">
-              <img :src="slide.sliderImg" alt="">
+              <img :src="slide.sliderImg" alt="image">
             </div>
           </div>
         </div>
@@ -47,36 +44,22 @@ export default {
     return {
       slides: [
         {
-          title      :  'First Slide',
-          subtitle   :  'Lorem ipsum',
-          image      :  require('../assets/images/element-01.png'),
-          alt        :  'Lorem ipsum',
-          bgImage    :  require('../assets/images/slider-01.jpg'),
-          sliderImg  :  require('../assets/images/slider-img.png')
+          title      :  'BET ON SPORTS',
+          subtitle   :  'LIVE WAGER',
+          bgImage    :  require('../assets/images/home/slider_sports-imgs.jpg'),
+          sliderImg  :  require('../assets/images/home/player.png')
         },
         {
-          title      :  'Second slide',
-          subtitle   :  'Lorem ipsum',
-          image      :  require('../assets/images/element-02.png'),
-          alt        :  'Lorem ipsum',
-          bgImage    :  require('../assets/images/slider-02.jpg'),
-          sliderImg  :  require('../assets/images/slider-img.png')
+          title      :  'RACEBOOK',
+          subtitle   :  '',
+          bgImage    :  require('../assets/images/home/slider_horses-imgs.jpg'),
+          sliderImg  :  require('../assets/images/home/horse.png')
         },
         {
           title      :  'Third slide',
-          subtitle   :  'Lorem ipsum',      
-          image      :  require('../assets/images/element-03.png'),
-          alt        :  'Lorem ipsum',
-          bgImage    :  require('../assets/images/slider-03.jpg'),
-          sliderImg  :  require('../assets/images/slider-img.png')
-        },
-        {
-          title      :  'Fourth slide',
-          subtitle   :  'Lorem ipsum',     
-          image      :  require('../assets/images/element-04.png'),
-          alt        :  'Lorem ipsum',
-          bgImage    :  require('../assets/images/slider-04.jpg'),
-          sliderImg  :  require('../assets/images/slider-img.png')
+          subtitle   :  'Lorem ipsum',
+          bgImage    :  require('../assets/images/home/slider_casino-imgs.jpg'),
+          sliderImg  :  require('../assets/images/home/casino elemnts.png')
         }
       ]
     }
