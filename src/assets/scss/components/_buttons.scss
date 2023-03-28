@@ -1,0 +1,68 @@
+
+.primary-button {
+  width: 250px;
+  color: $primary-text-color;
+  display: flex;
+  padding: 12px 8px;
+  font-weight: bold;
+  border-radius: 5px;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  transition: 0.1s ease-in;
+  border: none;
+
+  &__classic {
+    background-color: $seventh-color;
+
+    // &:hover {
+    //   background-color: green;
+    // }
+  }
+
+  &__new {
+    background-color: $eighth-color;
+
+    // &:hover {
+    //   background-color: pink;
+    // }
+  }
+}
+
+.secondary-button {
+  color: $primary-text-color;
+  display: flex;
+  padding: 3px 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: 0.1s ease-in;
+  font-size: 13px;
+
+  @media (min-width: 600px) {
+    padding: 8px 18px;
+    font-size: 15px;
+  }
+
+  &__classic {
+    background-color: $seventh-color;
+
+    // &:hover {
+    //   background-color: red;
+    // }
+  }
+
+  &__betslip {
+    background-color: $seconday-btn-bg;
+
+    // &:hover {
+    //   background-color: red;
+    // }
+  }
+}

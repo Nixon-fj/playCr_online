@@ -1,0 +1,60 @@
+$primary-color    : #FFFFFF;
+$secondary-color  : #000000;
+$third-color      : #CC8E04;
+$fouth-color      : #00000030;
+$fifth-color      : #EFDB7C;
+$sixth-color      : #9AB3F5;
+$seventh-color    : #2958D3;
+$eighth-color     : #0A3195;
+$ninth-color      : #02123C;
+$tenth-color      : #00102E;
+$eleventh-color   : #325BCC;
+$twelfth-color    : #12348F;
+$thirteenth-color : #E0E9FF;
+
+$bg-main-color    : $tenth-color;
+$bg-second-color  : $thirteenth-color;
+$bg-third-color   : $tenth-color;
+$bg-fourth-color  : #888888;
+
+/* Text Colors */
+$primary-text-color   :  $primary-color;
+$secondary-text-color :  $fifth-color;
+$third-text-color     :  $third-color;
+$fourth-text-color    :  $secondary-color;
+$fifth-text-color     :  $eighth-color;
+
+
+/* Buttons styles */
+$primary-btn-bg   : $secondary-color;
+$seconday-btn-bg  : $eighth-color;
+
+/* Font Sizes */
+
+/* H1 */
+$h1-mobile  : 35px;
+$h1-desktop : 60px; 
+
+/* H2 */
+$h2-mobile  : 19px; 
+$h2-desktop : 45px;
+
+/* Paragraph */
+$primary-paragraph: 18px; 
+$secondary-paragraph: 24px;
+
+/* Subtitle */
+$subtitle-mobile  : 25px;
+$subttitle-desktop: 50px;
+
+/* Breakpoints */
+$breakpoints:
+(
+  s_phone   : 0,
+  m_phone   : 428px,
+  s_tablet  : 744px,
+  m_tablet  : 834px,
+  s_desktop : 1024px,
+  m_desktop : 1440px
+);
+

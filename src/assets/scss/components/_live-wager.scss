@@ -1,0 +1,110 @@
+.live-wager__container {
+  background-color: $sixth-color;
+  padding: 1rem;
+  margin-bottom: 32px; 
+}
+
+.live-wager {
+  @include displayGrid(20%, 16px);
+
+  &__heading {
+    margin-bottom: 16px;
+    color: $eighth-color;
+  }
+
+  &__item {
+    height: 120px;
+    background-color: #010101;
+    position: relative;
+
+    &--bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--img {
+      position: absolute;
+      z-index: 4;
+      width: 100%;
+      bottom: 0px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
+    }
+  
+    @include from(s_tablet) {
+      height: 210px;
+    }
+  
+    &:first-child {
+      grid-column: span 4;
+      position: relative;
+  
+      @include from(s_tablet) {
+        grid-column: span 2;
+      }
+    }
+  
+    &:nth-child(2) {
+      grid-column: span 2;
+      position: relative;
+  
+      @include from(s_tablet) {
+        grid-column: span 1;
+      }
+    }
+    
+    &:nth-child(3) {
+      grid-column: span 2;
+      position: relative;
+  
+      @include from(s_tablet) {
+        grid-column: span 1;
+      }
+    }
+  }
+}
+
+.item {
+  height: 120px;
+  background-color: #010101;
+
+  @include from(s_tablet) {
+    height: 210px;
+  }
+
+  &:first-child {
+    grid-column: span 4;
+    background-color: red;
+
+    @include from(s_tablet) {
+      grid-column: span 2;
+    }
+  }
+
+  &:nth-child(2) {
+    grid-column: span 2;
+    background-color: green;
+
+    @include from(s_tablet) {
+      grid-column: span 1;
+    }
+  }
+  
+  &:nth-child(3) {
+    grid-column: span 2;
+    background-color: pink;
+
+    @include from(s_tablet) {
+      grid-column: span 1;
+    }
+  }
+}

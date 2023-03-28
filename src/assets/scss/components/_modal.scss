@@ -1,0 +1,75 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: $eighth-color;
+}
+
+
+.login__form {
+  text-align: start;
+
+  &--label {
+    display: block;
+    font-size: 24px;
+    color: $fourth-text-color;
+    margin-bottom: 8px;
+    font-size: $primary-paragraph;
+  }
+
+  &--input {
+    display: block;
+    // width: 100%;
+    margin-bottom: 16px;
+    padding: 18px 8px;
+    font-size: 18px;
+    background-color: $bg-second-color;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.login__btns-login {
+  display: flex;
+  justify-content: center;
+}
+
+.login__link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+
+  a {
+    color: $fifth-text-color;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+}

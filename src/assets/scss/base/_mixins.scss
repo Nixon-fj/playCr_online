@@ -1,0 +1,28 @@
+@mixin displayGrid($width, $gap) {
+  display:  grid;
+  grid-gap: $gap;
+  grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+@mixin displayFlex($justify: space-between, $align: center, $wrap: wrap, $dir: row){
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  flex-direction: $dir;
+}
+
+@mixin mobile-styles($size) {
+  @media (max-width: $size) { @content; }
+}
+
+@mixin media-query($size) {
+  @media (min-width: $size) { @content; }
+}
+

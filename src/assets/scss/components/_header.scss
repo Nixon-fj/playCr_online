@@ -1,0 +1,98 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $bg-main-color;
+  border-bottom: 2px solid $fifth-color;
+}
+
+.header-content {
+  display: flex;
+  padding: 30px 16px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 740px) {
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__icon {
+    color: $fifth-color;
+    font-size: 35px;
+    margin-right: 94px;
+  }
+
+  &__img {
+    width: 140px;
+    height: 45px;
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (min-width: 1000px) {
+      margin-right: 150px;
+    }
+  }
+
+  &__info {
+
+    &--list {
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+
+      @media (min-width: 1000px) {
+        display: flex;
+      }
+
+      &-item a {
+        color: $primary-color;
+        text-decoration: none;
+        margin-right: 50px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover {
+          color: $third-color;
+        }
+
+        @media (min-width: 1200px) {
+          margin-right: 100px;
+        }
+      }
+    }
+  }
+
+  &__language {
+    color: $fifth-color;
+    font-size: 24px;
+    margin-right: 48px;
+  }
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    column-gap: 5px;
+  }
+}
