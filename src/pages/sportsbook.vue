@@ -7,7 +7,7 @@
     name: "SportsBookPage",
 
     setup:() => {
-      const BackEndUrl = "wager911.online";
+      const BackEndUrl = "playcr.online";
       
       return {
         BackEndUrl,

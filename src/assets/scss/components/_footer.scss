@@ -18,7 +18,7 @@
         grid-template-columns: 1fr;
         row-gap: 28px;
         
-        @media (min-width: 740px) {
+        @media (min-width: 769px) {
             grid-template-columns: 1fr 1fr;
             margin-left: auto;
             margin-right: auto;
@@ -27,12 +27,45 @@
         }
 
         @media (min-width: 1000px) {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             width: unset;
         }
 
         &--item {
             text-transform: uppercase;
+            &:nth-child(2){
+                order: 5;
+            }
+            &:nth-child(3){
+                order: 10;
+            }
+            &:nth-child(4){
+                order: 2;
+            }
+            &:nth-child(5){
+                order: 6;
+            }
+            &:nth-child(6){
+                order: 11;
+            }
+            &:nth-child(7){
+                order: 3;
+            }
+            &:nth-child(8){
+                order: 7;
+            }
+            &:nth-child(9){
+                order:12;
+            }
+            &:nth-child(10){
+                order: 9;
+            }
+            &:nth-child(11){
+                order: 4;
+            }
+            &:nth-child(12){
+                order: 8;
+            }
 
             a {
                 text-decoration: none;
@@ -41,4 +74,46 @@
         }
     }
 
+}
+.mobile-nav-container{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: $third-color;
+    z-index: 1000;
+    &-content{
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 10px;
+        .mobile-nav-items{
+            display: flex;
+            text-decoration: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 77px;
+            color: $tenth-color;
+            img{
+                object-fit: contain;
+            }
+            
+            span{
+                margin-top: 5px;
+                width: 100%;
+                font-size: 12px;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+        .mobile-nav-img-container{
+            height: 25px;
+        }
+    @include from(1024px){
+        display: none;
+    }
+    }
 }

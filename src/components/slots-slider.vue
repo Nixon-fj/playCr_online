@@ -3,12 +3,11 @@
     <Carousel class="slot-slider__slider max-container" :settings="settings" :breakpoints="breakpoints" :touchDrag="true">
       <Slide v-for="(slide, index) in slides" :key="index">
         <div class="slot-slider__item">
-          <img :src="slide.bgImage" alt="img">
-          <img :src="slide.image" :alt="slide.alt">
-          <h4 class="slot-slider__item--heading">{{ slide.title }}</h4>
-        </div>
-        <div class="">
-          
+          <img class="slot-slider__item--bg" :src="slide.bgImage" alt="img" width="408" height="234">
+          <div class="slot-slider__item--content">
+            <p class="slot-slider__item--content--heading">{{ slide.title }}</p>
+            <img :src="slide.image" :alt="slide.alt" width="300" height="200">
+          </div>
         </div>
       </Slide>
       <template #addons>
@@ -34,26 +33,17 @@ export default defineComponent({
     Navigation,
   },
   data: () => ({
-    // carousel settings
     settings: {
-      itemsToShow: 2.1,
+      itemsToShow: 1,
       snapAlign: 'center',
     },
-    // breakpoints are mobile first
-    // any settings not specified will fallback to the carousel settings
     breakpoints: {
-      500: {
-        itemsToShow: 3.5,
+      700: {
+        itemsToShow: 2,
         snapAlign: 'center',
       },
-      // 700px and up
-      800: {
-        itemsToShow: 4.5,
-        snapAlign: 'center',
-      },
-      // 1024 and up
-      1024: {
-        itemsToShow: 6,
+      1000: {
+        itemsToShow: 3,
         snapAlign: 'center',
       },
     },

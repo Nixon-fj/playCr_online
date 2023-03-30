@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="hero-slider__bg">
-          <img :src="slide.bgImage" :alt="slide.alt">
+          <img :src="slide.bgImage" alt="image">
         </div>
       </div>
     </Slide>
@@ -56,8 +56,8 @@ export default {
           sliderImg  :  require('../assets/images/home/horse.png')
         },
         {
-          title      :  'Third slide',
-          subtitle   :  'Lorem ipsum',
+          title      :  'ONLINE CASINO',
+          subtitle   :  '',
           bgImage    :  require('../assets/images/home/slider_casino-imgs.jpg'),
           sliderImg  :  require('../assets/images/home/casino elemnts.png')
         }

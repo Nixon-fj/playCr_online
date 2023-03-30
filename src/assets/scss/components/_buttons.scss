@@ -17,24 +17,18 @@
   &__classic {
     background-color: $seventh-color;
 
-    // &:hover {
-    //   background-color: green;
-    // }
   }
 
   &__new {
     background-color: $eighth-color;
 
-    // &:hover {
-    //   background-color: pink;
-    // }
   }
 }
 
 .secondary-button {
   color: $primary-text-color;
   display: flex;
-  padding: 3px 18px;
+  padding: 0.5rem 1rem;
   font-weight: bold;
   border-radius: 5px;
   flex-direction: column;
@@ -46,23 +40,16 @@
   font-size: 13px;
 
   @media (min-width: 600px) {
-    padding: 8px 18px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   &__classic {
-    background-color: $seventh-color;
+    background-color: $fouth-color;
 
-    // &:hover {
-    //   background-color: red;
-    // }
   }
 
   &__betslip {
-    background-color: $seconday-btn-bg;
-
-    // &:hover {
-    //   background-color: red;
-    // }
+    background-color: $fifth-color;
+    color: $sixth-color;
   }
 }

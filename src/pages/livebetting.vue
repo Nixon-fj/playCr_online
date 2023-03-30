@@ -1,5 +1,5 @@
 <template>
-  <iframe title="Live betting" class="liveBettingIframe" src="https://plive.jazzsports.ag/live/?skin=perubetpe#!/sport/2" width="100%" height="900" frameborder="no"></iframe>
+  <iframe title="Live betting" class="liveBettingIframe" src="https://plive.jazzsports.ag/live/?skin=mysportsbook#!/sport/2" width="100%" height="900" frameborder="no"></iframe>
 </template>
 
 <script>
@@ -7,7 +7,7 @@
     name: "SportsPage",
 
     setup:() => {
-      const BackEndUrl = "wager911.online";
+      const BackEndUrl = "playcr.online";
       
       return {
         BackEndUrl,

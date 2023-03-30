@@ -10,16 +10,32 @@ const routes = [
     component: () => import('../pages/sportsbook.vue'),  
   },
   {
+    path: '/live betting',
+    component: () => import('../pages/livebetting.vue'),  
+  },
+  {
     path: '/casino',
     component: () => import('../pages/casino.vue'),  
+  },
+  {
+    path: '/props builder',
+    component: () => import('../pages/propsbuilder.vue'),  
   },
   {
     path: '/racebook',
     component: () => import('../pages/racebook.vue'),  
   },
   {
-    path: '/live betting',
-    component: () => import('../pages/livebetting.vue'),  
+    path: '/House rules',
+    component: () => import('../pages/houserules.vue'),  
+  },
+  {
+    path: '/sport rules',
+    component: () => import('../pages/sportrules.vue'),  
+  },
+  {
+    path: '/horse tracks',
+    component: () => import('../pages/horsetracks.vue'),  
   },
 ];
 

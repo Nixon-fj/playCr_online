@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid $twelfth-color;
+    padding: 1rem;
+}
+
+.title{
+    font-size: 24px;
+    color: $twelfth-color;
+}
+summary::marker{
+    display: none;
+}
+
+.horsetracks-grid{
+    display: grid;
+    grid-column: 1fr;
+    column-gap: 0.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    @include from(s_tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include from(s_desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

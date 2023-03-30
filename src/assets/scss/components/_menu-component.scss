@@ -1,4 +1,5 @@
 .hamburger-menu {
+  width: 70%;
   &__button {
     background: none;
     border: none;
@@ -17,43 +18,6 @@
       outline: none;
     }
 
-    // &::before {
-    //   content: '';
-    //   display: block;
-    //   height: 2px;
-    //   position: absolute;
-    //   width: 100%;
-    //   background-color: #000;
-    //   transition: transform 0.2s ease-in-out;
-    // }
-
-    // &::after {
-    //   content: '';
-    //   display: block;
-    //   height: 2px;
-    //   position: absolute;
-    //   width: 100%;
-    //   background-color: #000;
-    //   transition: transform 0.2s ease-in-out;
-    // }
-
-    // &::before {
-    //   top: 0;
-    // }
-
-    // &::after {
-    //   bottom: 0;
-    // }
-
-    // &.is-active {
-    //   &::before {
-    //     transform: translateY(10px) rotate(45deg);
-    //   }
-
-    //   &::after {
-    //     transform: translateY(-10px) rotate(-45deg);
-    //   }
-    // }
   }
 
   &__close-button {
@@ -70,35 +34,21 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 68px;
-    left: 0;
-    height: 100vh;
-    bottom: 0;
-    z-index: 10;
-    width: 70%;
-    max-width: 400px;
-    background-color: $bg-third-color;
-    padding: 50px 20px 20px;
-    border-radius: 0 4px 4px 0;
-    box-shadow: -5px 0px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
+    display: none;
+    width: 90%;
     list-style: none;
-    row-gap: 2rem;
-
-    &.is-active {
-      transform: none;
+    margin: 0;
+    padding: 0;
+    
+    @include from(s_desktop){
+      display: flex;
+      justify-content: space-around;
     }
-
   }
   
   &__item {
     margin-bottom: 10px;
-    font-size: $secondary-paragraph;
+    font-size: 16px;
     font-weight: lighter;
     text-transform: capitalize;
     text-decoration: none;
@@ -106,6 +56,13 @@
     a {
       color: $fifth-color;
       text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover{
+      color: $third-color;
+    }
+    @include from(1250px){
+      font-size: $secondary-paragraph;
     }
   }
 }

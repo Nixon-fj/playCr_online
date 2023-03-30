@@ -1,10 +1,21 @@
 <template>
+  <div class="mobile-nav-container">
+        <div class="mobile-nav-container-content">
+          <router-link class="mobile-nav-items" v-for="(option,index) in options" :key="index" :to="option.route">
+            <div class="mobile-nav-img-container"><img :src="option.img" :alt="option.alt"></div>
+            <span>{{option.name}}</span></router-link>
+        </div>
+    </div>
   <footer class="footer">
     <div class="footer-content">
       <ul class="footer-content__list">
         <li class="footer-content__list--item" @click="isActive = !isActive" v-for="(route, index) in routes" :key="index">
           <router-link :to="route.route">{{ route.route }}</router-link>
         </li>
+        <li class="footer-content__list--item"><a href="https://adm.playcr.online/home/landing">agents</a></li>
+        <li class="footer-content__list--item"><a href="https://agents.playcr.online/AgentSiteV2/">agents classic</a></li>
+        <li class="footer-content__list--item"><a href="#">1-866-383-4647</a></li>
+        <li class="footer-content__list--item"><a href="#">1-888-606-4182</a></li>
       </ul>
     </div>
     </footer>
@@ -20,10 +31,10 @@
             route      :  'sportsbook'
           },
           {
-            route      :  'live betting'
+            route      :  'racebook'
           },
           {
-            route      :  'racebook'
+            route      :  'live betting'
           },
           {
             route      :  'casino'
@@ -36,15 +47,38 @@
           },
           {
             route      :  'horse tracks'
+          }
+        ],
+        options:[
+          {
+            route 	   : 'sportsbook',
+            img        :  require('../assets/images/icons/sports.svg'),
+            alt        :  'sportsbook',
+            name       :  'SPORTS'
           },
           {
-            route      :  'Privacy policy'
+            route 	   : 'live betting',
+            img        :  require('../assets/images/icons/live.svg'),
+            alt        :  'live betting',
+            name       :  'LIVE BETTING'
           },
           {
-            route      :  'terms and conditions'
+            route 	   : 'casino',
+            img        :  require('../assets/images/icons/casino.svg'),
+            alt        :  'casino',
+            name       :  'CASINO'
           },
           {
-            route      :  'responsible gaming'
+            route 	   : 'props builder',
+            img        :  require('../assets/images/icons/icon-props.svg'),
+            alt        :  'props builder',
+            name       :  'PROPS BUILDER'
+          },
+          {
+            route 	   : 'racebook',
+            img        :  require('../assets/images/icons/racebook.svg'),
+            alt        :  'racebook',
+            name       :  'RACEBOOK'
           }
         ]
       }

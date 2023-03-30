@@ -3,22 +3,39 @@
   top: 0;
   z-index: 10;
   background-color: $bg-main-color;
-  border-bottom: 2px solid $fifth-color;
+  border-bottom: 5px solid $third-color;
 }
-
+.a-logocontainer{
+  display: block;
+  width: 38%;
+  min-width: 100px;
+  max-width: 250px;
+}
+.logo-container{
+  display: block;
+  width: 100%;
+  
+  height: auto;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
 .header-content {
   display: flex;
-  padding: 30px 16px;
+  padding: 1rem;
   align-items: center;
   justify-content: space-between;
-
   @media (min-width: 740px) {
     justify-content: space-between;
+    width: 80%;
   }
 
   &__nav {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__cta {
