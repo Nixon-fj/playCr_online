@@ -32,7 +32,7 @@ export default {
     const bgimage = require("@/assets/images/casino/slider-backgr.jpg")
     const image = require("@/assets/images/casino/Casino_elements.png")
 
-    let title = "PLAYCR.ONLINE REAL MONEY CASINO DEALS UP THE LATEST AND GREATEST CASINO SOFTWARE FOR PLAYERS TO ENJOY."
+    let title = "PLAYCR REAL MONEY CASINO DEALS UP THE LATEST AND GREATEST CASINO SOFTWARE FOR PLAYERS TO ENJOY."
     let subTitle = "Experience the same excitement as you would in Vegas, Atlantic City or Monte Carlo in the comfort of your home, office or on the road. Players looking to only play casino games can take advantage of our huge 100% casino bonus offer. Start your winning streak today by joining PLAYCR.ONLINE."
 
     return {

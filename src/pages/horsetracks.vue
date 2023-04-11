@@ -56,7 +56,7 @@ export default {
         const bgimage = require("@/assets/images/home/slider_horses-imgs.jpg")
         const image = require("@/assets/images/Racebook Tracks/horse_image.png")
 
-        let title = "PLAYCR.ONLINE RACEBOOK OFFERS WORLD-CLASS HORSE RACING FROM AROUND THE WORLD!"
+        let title = "PLAYCR RACEBOOK OFFERS WORLD-CLASS HORSE RACING FROM AROUND THE WORLD!"
         let subTitle = "Bet the Breeders Cup, famous Australian tracks, the Hong Kong Jockey Club or even your local racetrack. Place your bets all the way up to post time using your desktop, tablet or phone. Wager on Thoroughbred or Quarter Horses, Harness and Greyhounds under the same account. PLAYCR online horse racebook also offers full track odds, exotics, and money back on losses. Why wait, bet the ponies today!"
 
         return {
