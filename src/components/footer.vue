@@ -2,7 +2,7 @@
   <div class="mobile-nav-container">
         <div class="mobile-nav-container-content">
           <router-link class="mobile-nav-items" v-for="(option,index) in options" :key="index" :to="option.route">
-            <div class="mobile-nav-img-container"><img :src="option.img" :alt="option.alt"></div>
+            <div class="mobile-nav-img-container"><img :src="option.img" :alt="option.alt" width="50" height="50"></div>
             <span>{{option.name}}</span></router-link>
         </div>
     </div>
@@ -10,12 +10,12 @@
     <div class="footer-content">
       <ul class="footer-content__list">
         <li class="footer-content__list--item" @click="isActive = !isActive" v-for="(route, index) in routes" :key="index">
-          <router-link :to="route.route">{{ route.route }}</router-link>
+          <router-link :to="route.route">{{ route.name }}</router-link>
         </li>
-        <li class="footer-content__list--item"><a href="https://adm.playcr.online/home/landing">agents</a></li>
-        <li class="footer-content__list--item"><a href="https://agents.playcr.online/AgentSiteV2/">agents classic</a></li>
-        <li class="footer-content__list--item"><a href="#">1-866-383-4647</a></li>
-        <li class="footer-content__list--item"><a href="#">1-888-606-4182</a></li>
+        <li class="footer-content__list--item"><a href="https://adm.playcr.online/home/landing" target="_blank">agents</a></li>
+        <li class="footer-content__list--item"><a href="https://agents.playcr.online/AgentSiteV2/" target="_blank">agents classic</a></li>
+        <li class="footer-content__list--item"><p>1-866-383-4647</p></li>
+        <li class="footer-content__list--item"><p>1-888-606-4182</p></li>
       </ul>
     </div>
     </footer>
@@ -28,36 +28,43 @@
       return {
         routes: [
           {
-            route      :  'sportsbook'
+            route      :  'Sports',
+            name       : 'Sportsbook'
           },
           {
-            route      :  'racebook'
+            route      :  'racebook',
+            name       : 'Racebook'
           },
           {
-            route      :  'live betting'
+            route      :  'live-betting',
+            name       : 'Live Betting'
           },
           {
-            route      :  'casino'
+            route      :  'casino',
+            name       : 'casino'
           },
           {
-            route      :  'House rules'
+            route      :  'House-rules',
+            name       : 'House rules'
           },
           {
-            route      :  'sport rules'
+            route      :  'sport-rules',
+            name       : 'sport rules'
           },
           {
-            route      :  'horse tracks'
+            route      :  'horse-tracks',
+            name       : 'horse tracks'
           }
         ],
         options:[
           {
-            route 	   : 'sportsbook',
+            route 	   : 'Sports',
             img        :  require('../assets/images/icons/sports.svg'),
             alt        :  'sportsbook',
             name       :  'SPORTS'
           },
           {
-            route 	   : 'live betting',
+            route 	   : 'live-betting',
             img        :  require('../assets/images/icons/live.svg'),
             alt        :  'live betting',
             name       :  'LIVE BETTING'
@@ -69,7 +76,7 @@
             name       :  'CASINO'
           },
           {
-            route 	   : 'props builder',
+            route 	   : 'props-builder',
             img        :  require('../assets/images/icons/icon-props.svg'),
             alt        :  'props builder',
             name       :  'PROPS BUILDER'

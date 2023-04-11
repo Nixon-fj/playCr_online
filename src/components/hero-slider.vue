@@ -9,18 +9,17 @@
               <h1 class="hero-slider__text-title">{{ slide.title }}</h1>
             </div>
             <div class="hero-slider__slider-img">
-              <img :src="slide.sliderImg" alt="image">
+              <img :src="slide.sliderImg" alt="image" width="450" height="430">
             </div>
           </div>
         </div>
         <div class="hero-slider__bg">
-          <img :src="slide.bgImage" alt="image">
+          <img :src="slide.bgImage" alt="image" width="1920" height="440">
         </div>
       </div>
     </Slide>
 
     <template #addons>
-      <!-- <Navigation /> -->
       <div class="hero-slider__pagination">
         <Pagination/>
       </div>
@@ -30,7 +29,7 @@
 
 <script>
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, /* Navigation */ Pagination, Slide } from 'vue3-carousel'
+import { Carousel, Pagination, Slide } from 'vue3-carousel'
 
 export default {
   name: 'Hero-Basic',
@@ -38,7 +37,6 @@ export default {
     Carousel,
     Slide,
     Pagination,
-    // Navigation,
   },
   data() {
     return {

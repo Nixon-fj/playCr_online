@@ -49,17 +49,15 @@
   &__item {
     margin-bottom: 10px;
     font-size: 16px;
-    font-weight: lighter;
     text-transform: capitalize;
     text-decoration: none;
     
     a {
       color: $fifth-color;
       text-decoration: none;
-      font-weight: 600;
     }
     a:hover{
-      color: $third-color;
+      color: $primary-color;
     }
     @include from(1250px){
       font-size: $secondary-paragraph;

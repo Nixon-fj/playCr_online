@@ -11,7 +11,7 @@
       </div>
       <div class="header-content__cta">
         <div class="header-buttons">
-          <a href="#" class="btn-login secondary-button secondary-button__betslip" @click="openModal">betslip</a>
+          <a href="#" class="btn-login secondary-button secondary-button__betslip" @click="openModal">login</a>
         </div>
       </div>
     </div>

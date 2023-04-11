@@ -2,7 +2,7 @@
   <div class="hamburger-menu">
     <ul class="hamburger-menu__list" :class="{ 'is-active': isActive }">
       <li class="hamburger-menu__item" @click="isActive = !isActive" v-for="(route, index) in routes" :key="index">
-        <router-link :to="route.route">{{ route.route }}</router-link>
+        <router-link :to="route.route">{{ route.name }}</router-link>
       </li>
     </ul>
   </div>
@@ -16,19 +16,24 @@ export default {
       isActive: false,
       routes: [
         {
-          route      :  'Sports'
+          route      :  'Sports',
+          name       :  'Sports'
         },
         {
-          route      :  'Live Wagering'
+          route      :  'Live-Wagering',
+          name       :  'Live Wagering'
         },
         {
-          route      :  'Casino'
+          route      :  'Casino',
+          name       :  'Casino'
         },
         {
-          route      :  'Props Builder'
+          route      :  'Props-Builder',
+          name       :  'Props Builder'
         },
         {
-          route      :  'Racebook'
+          route      :  'Racebook',
+          name       :  'Racebook'
         },
       ]
     };

@@ -1,0 +1,33 @@
+.rules-page {
+  background-color: $thirteenth-color;
+  color: $twelfth-color;
+  margin: 3rem 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+  @include from(m_desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__heading {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+}
+
+.rules-page__list {
+
+  &-item {
+    margin-bottom: 8px;
+  }
+}
+
+.rules-page__sublist {
+
+  &-item {
+    margin-bottom: 4px;
+  }
+}

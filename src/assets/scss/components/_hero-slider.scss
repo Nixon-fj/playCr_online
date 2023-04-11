@@ -50,6 +50,9 @@
   
     img {
       height: 100%;
+      @include from(1920px) {
+        width: 100%;
+      }
     }
   }
 

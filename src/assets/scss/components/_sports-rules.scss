@@ -1,0 +1,100 @@
+.sport-rules__table-sport {
+  display: flex;
+  border-collapse: collapse;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.sport-rules__table-sport--item {
+  border: 2px solid $bg-main-color;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  @include from(s_tablet) {
+    flex-direction: row;
+  }
+
+  &-one {
+    background-color: $bg-main-color;
+    color: $primary-text-color;
+    padding: 8px;
+
+    @include from(s_tablet) {
+      min-width: 200px;
+    }
+  }
+
+  &-two {
+    padding: 8px;
+  }
+}
+
+.sport-rules {
+  background-color: $thirteenth-color;
+  color: $fouth-color ;
+  margin: 3rem 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+  @include from(m_desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__heading {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+    margin-top: 8px;
+  }
+
+  &__paragraph {
+    margin-bottom: 8px;
+  }
+
+  &__dropdown {
+    background-color: $bg-main-color;
+    margin-bottom: 1rem;
+    color: $primary-color;
+    max-width: 100%;
+    
+    &--heading {
+      padding: 1rem;
+      font-size: 18px;
+    }
+    
+    &--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__details {
+    background-color: $eleventh-color;
+    color: $primary-text-color;
+    padding: 1rem;
+  }
+}
+
+
+.arrow {
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-width: 0 4px 4px 4px;
+  border-color: transparent transparent transparent transparent;
+  transition: transform 0.2s;
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}

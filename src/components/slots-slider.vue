@@ -2,13 +2,15 @@
   <div class="slot-slider">
     <Carousel class="slot-slider__slider max-container" :settings="settings" :breakpoints="breakpoints" :touchDrag="true">
       <Slide v-for="(slide, index) in slides" :key="index">
-        <div class="slot-slider__item">
+        <a class="slot-slider__link" :href="slide.url">
+          <div class="slot-slider__item">
           <img class="slot-slider__item--bg" :src="slide.bgImage" alt="img" width="408" height="234">
           <div class="slot-slider__item--content">
             <p class="slot-slider__item--content--heading">{{ slide.title }}</p>
             <img :src="slide.image" :alt="slide.alt" width="300" height="200">
           </div>
         </div>
+        </a>
       </Slide>
       <template #addons>
         <div class="slot-slider__arrows">
@@ -51,21 +53,24 @@ export default defineComponent({
     slides: [
       {
         title      :  'SPORTS',
-        image      :  require('@/assets/images/home/player 02.png'),
+        image      :  require('@/assets/images/home/sports.svg'),
         bgImage    :  require('@/assets/images/home/sports-Bckgr.jpg'),
         alt        :  'sports',
+        url        :  'Sports'
       },
       {
         title      :  'CASINO',
-        image      :  require('@/assets/images/home/casino elemnts 02.png'),
+        image      :  require('@/assets/images/home/casino.svg'),
         bgImage    :  require('@/assets/images/home/casino-Bckgr.jpg'),
         alt        :  'casino',
+        url        :  'casino'
       },
       {
         title      :  'RACEBOOK',
-        image      :  require('@/assets/images/home/horse 02.png'),
+        image      :  require('@/assets/images/home/horse.svg'),
         bgImage    :  require('@/assets/images/home/horses-Bckgr.jpg'),
         alt        :  'racebook',
+        url        :  'racebook'
       }
     ]
   }),

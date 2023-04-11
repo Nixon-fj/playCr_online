@@ -15,8 +15,8 @@
   border: none;
 
   &__classic {
+    margin: 1rem 0;
     background-color: $seventh-color;
-
   }
 
   &__new {
@@ -44,8 +44,8 @@
   }
 
   &__classic {
-    background-color: $fouth-color;
-
+    background-color: $fifth-color;
+    color: $sixth-color;
   }
 
   &__betslip {

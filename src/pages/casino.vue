@@ -1,5 +1,5 @@
 <template>
-  <heroBanner :bgimage="bgimage" :image="image" altImage="Slider image" title="CASINO ONLINE"/>
+  <heroBanner :bgimage="bgimage" :image="image" altImage="Slider image" title="CASINO ONLINE" />
   <section class="casino-games">
     <div class="casino-information-container">
       <h2>{{ title }}</h2>
@@ -16,15 +16,25 @@
       </div>
     </div>
   </section>
+
+  <ModalComponent ref="modal" />
 </template>
 
 <script>
+
+import ModalComponent from '@/components/modal.vue';
 import HeroBanner from "@/components/heroBanner.vue";
 
 export default {
   name: "CasinoPage",
   components: {
     HeroBanner,
+    ModalComponent,
+  },
+  methods: {
+    openModal() {
+      this.$refs.modal.openModal();
+    }
   },
 
   setup: () => {
